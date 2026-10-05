@@ -1,0 +1,292 @@
+/*Start main rules*/
+
+*{box-sizing: border-box}
+.container {width:1250px;margin:auto;}
+.clear-fix{clear:both;}
+html{background-color:#001F32;}
+/*End main rules*/
+
+/*Start header*/
+
+.mainheader {
+    height:770px;
+    background-image:url("../IMGS/6.jpg");
+    background-size:cover;
+}
+.mainheader .text {color:#001F32;padding-top:125px;padding-bottom:122px;text-align:center;}
+.mainheader .text p {
+    font-size:35px;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.mainheader .text h1 {
+    font-size:65px;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding:10px,0px;
+    border-bottom:3.5px solid red;
+    border-top:3.5px solid red;
+    display:inline;
+}
+.mainheader .text .span1{background: linear-gradient(to left, #001f32 11%, #fafdff 67%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: #ffffff00;}
+.mainheader .text .span2{background: linear-gradient(to right, #001F32 4%, #fafdff 86%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: #ffffff00;}
+.mainheader>.container>.contents{}
+.mainheader>.container ul {text-align:right;padding-top:0px;display:inline;margin-bottom:65px;padding:0px;float:right}
+.mainheader>.container ul>li{display:inline-block;border:0.7px solid red;border-radius:50%;padding:7px;}
+.mainheader>.container ul>.active ,.mainheader>.container ul>li:hover{background-color:red;
+    transition:all 0.4s ease-in-out} 
+.mainheader>.container a{transform:translateX(50%);width:100%;display:inline}
+.mainheader>.container a>i{font-size:8em;color:#001F32;transform: translate(805% ,25%);}
+.mainheader>.container a>i:hover{color:red}
+.mainheader nav {color:white;margin-left:0px;
+    background-color:#001F32;height:110px;display:block;transform: skewY(-4deg);}
+.mainheader nav .unskew {transform:skewY(4deg);}
+.mainheader nav h2>span{color:red;}
+.mainheader nav ul {float:left;margin-top:32px;margin-bottom:30px}
+.mainheader nav ul li {list-style:none;display:inline-block;padding-left:25px;}
+.mainheader nav>.container>ul>li {list-style:none;display:inline-block;padding-left:25px;font-size:20px}
+.mainheader nav ul li a {text-decoration:none;color:white;}
+.mainheader nav ul li a:hover {color:red;transition:all 0.4s ease-in-out;}
+.mainheader nav h2 {float:left;font-family: 'Merienda One', cursive;font-size:40px}
+.mainheader nav .nav-icons>ul {float:right;padding-left:110px;margin-top:24px;margin-bottom:24px}
+.mainheader nav .nav-icons>ul li {padding-left:20px;margin:0px}
+
+/*End header*/
+
+/*Start hello*/
+
+.hello {background-image: url(../IMGS/p13.png);background-size: cover;
+    height:750px;transform: skewY(-4deg);padding-bottom:40px;}
+.hello>hr {color:red;margin:0px;height:4px;background-color:red;border:0px}
+.hello .desc-icons {color: red;width: 100%;
+    overflow: hidden;text-align: center;transform:
+    skewY(0deg) translateY(-45px);display: inline-block;margin: auto;}
+.hello .desc-icons>i {background: white;padding: 11px;border-radius: 50%;border: 3.5px solid red;width: 80px;height: 80px;transform: skewY(4deg);}
+.hello .desc-icons>h3{color:white;padding-bottom:0px;margin-bottom:0px;transform: skewY(4deg);}
+.hello>.container {transform: skewY(4deg);height:245px;padding-right:210px;padding-left:180px;padding-top:0px;}
+.hello .my-img {float:left;width:25%;background-color:#001f32;height:240px;width:240px;border-radius:50%;}
+.hello .my-img>img {padding:8px;border-radius:50%;}
+.hello .my-info {float:right;text-align:left;width:65%;color:white;padding-top:15px;}
+.hello .my-info h2{font-family: 'Merienda One', cursive;}
+.hello .my-info .p3{color:#00ff27;}
+.hello .progress .box {
+    position: relative;
+    width: 300px;
+    height:260px;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    transform: skewY(4deg);
+    margin:0px auto;
+}
+.hello .progress {display: inline-flex;text-align:center;width:100%;align-items:center;}
+.hello .progress #card {width:25%;align-items:center;}
+.hello .progress .box .percent{
+    position: relative;
+    width: 150px;
+    height:150px;
+}
+.hello .progress .box .percent svg{
+    position: relative;
+    width: 150px;
+    height:150px;
+    background:none;
+}
+.hello .progress .box .percent svg circle{
+    width: 200px;
+    height:200px;
+    fill:rgba(119, 119, 119, 0.2);
+    stroke-width:10;
+    transform:translate(5px ,5px);
+    stroke-dasharray:440;
+    stroke-linecap:round;
+}
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset:0;
+    stroke:white;
+    stroke-width:10;
+}
+.card1>.box .percent svg circle:nth-child(2){
+    stroke-dashoffset:calc(440 - (440*90) / 100);
+    stroke:#32ff00;
+    stroke-width:11;
+}
+.card2>.box .percent svg circle:nth-child(2){
+    stroke-dashoffset:calc(440 - (440*88) / 100);
+    stroke:#32ff00;
+    stroke-width:11;
+}
+.card3>.box .percent svg circle:nth-child(2){
+    stroke-dashoffset:calc(440 - (440*60) / 100);
+    stroke:#32ff00;
+    stroke-width:11;
+}
+.card4>.box .percent svg circle:nth-child(2){
+    stroke-dashoffset:calc(440 - (440*100) / 100);
+    stroke:#32ff00;
+    stroke-width:11;
+}
+.box .percent .number{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#32ff00;
+}
+.box .percent .number h2{font-size:48px;font-family: 'Merienda One', cursive;}
+.box .percent .number h2 span{font-size:24px;transform: translateY(-20px)}
+.box .percent .text{padding:10px 0px;color:white;;font-weight:700;letter-spacing:1px;text-align: center;font-family: 'Merienda One', cursive;}
+
+/*End hello*/
+
+/*Start services*/
+
+.services {height:1000px;transform: skewY(-4deg);background: linear-gradient(to bottom, #001F32 25%, red 75%);}
+.services .desc-icons {color: red;width: 100%;overflow: hidden;text-align: center;
+    transform: skewY(4deg) translateY(-40px);display: inline-block;margin: auto;}
+.services .desc-icons>i {background: white;padding: 14px;border-radius: 50%;border: 3.5px solid red;width: 80px;height: 80px;}
+.services>hr {color:white;margin:0px;height:4px;background-color:white;border:0px}
+.services .desc-icons>h3{color:white}
+.services>.container {transform:skewY(4deg);padding-top:40px;text-align: center}
+.services .service {width:20%;border:none;border-radius:7px;height:330px;display:inline-block;margin:1.5%;padding:9px;text-align:center;color:#777777;background-color:white;}
+.services>.container>.service:hover{background-image: url(../IMGS/p14.png);background-size:cover;color: red;transition:all 0.3s ease-in-out;border:none}
+.services>.container>.service>p{font-size:19px;}
+.services .service>i {padding-top:20px}
+
+/*End services*/
+
+/*Start portofolio*/
+
+.portofolio {;background-image: url(../IMGS/p14.png);background-size:cover;height:auto;transform: skewY(-4deg);padding-bottom:40px;margin-bottom:-1px;}
+.portofolio>hr {color:white;margin:0px;height:4px;background-color:white;border:0px}
+.portofolio .desc-icons {color: red; width: 100%;overflow: hidden;text-align: center;
+    transform: skewY(4deg) translateY(-38px);display: inline-block;margin: auto;}
+.portofolio .desc-icons>i {background: white;padding: 11px;border-radius: 50%;border: 3.5px solid red;width: 80px;height: 80px;}
+.portofolio .desc-icons>h3{color:white}
+.portofolio>.container {transform:skewY(4deg);text-align: center;}
+.portofolio>.container>.buttons{text-align: center;margin-bottom:40px}
+.portofolio>.container>.buttons>button{text-align:center;padding:10px 20px;width:200px;margin:0px 10px;background:none;border:0px solid white;border-radius:3px;color:white;}
+.portofolio>.container>.buttons .active ,.portofolio>.container>.buttons>button:hover{
+    background:white;color:red;cursor:pointer;transition:all 0.3s ease-in-out;}
+.portofolio .service {width:30%;border-radius:4px;height:450px;
+    display:inline-block;margin-right:19px;margin-left:19px;margin-bottom:40px;padding:28px;
+    text-align:center;color:#777777;background-color: white}
+.portofolio>.container>.service:hover{background-image: url(../IMGS/p12.png);background-size:cover;color: red;transition:all 0.3s ease-in-out;border:none;}
+.portofolio>.container>.service .logo:hover{transform: translate(80px ,0px);transition:all 0.4s ease-in-out}
+.portofolio>.container>.service>.logo{transform: translateY(30%);margin:0px}
+.portofolio .service i{padding:20px;font-size:9em}
+.portofolio>.container>ul{text-align:center;padding-top:0px;display:inline-block;width:100%;margin-bottom:65px;padding:0px}
+.portofolio>.container>ul li{display:inline-block;border-radius:5%;padding:10px;background:#777777;}
+.portofolio>.container>ul>li.active ,.portofolio>.container>ul>li:hover
+{background-color:red;transition:all 0.4s ease-in-out;cursor: pointer;}
+
+/*End portofolio*/
+
+/*Start team members*/
+
+.team-members {transform: skewY(-4deg);background:linear-gradient(to bottom, #001F32 25%, #4ba7e5 75%)}
+.team-members>hr {color:red;margin:0px;height:4px;background-color:red;border:0px}
+.team-members .desc-icons {color: red;width: 100%;overflow: hidden;text-align: center;
+    transform: skewY(4deg) translateY(-35px);display: inline-block;margin: auto;}
+.team-members .desc-icons>i {background: white;padding: 13px;border-radius: 50%;border: 3.5px solid red;width: 80px;height: 80px;}
+.team-members .desc-icons>h3{color:white}
+.team-members>.container {transform:skewY(4deg);text-align:center;padding-bottom:60px;padding-top:0px;}
+.team-members>.container .member {width:22%;display:inline-block;}
+.team-members>.container .member>img{border:5px solid #FFF;border-radius:4%;width:100%}
+.team-members>.container .member>.info{padding-left:45px}
+.team-members>.container .member h4{margin-top:10px;margin-bottom:5px;text-align:left;color:white;font-family: 'Merienda One', cursive;}
+.team-members>.container .member h5{margin-top:5px;margin-bottom:5px;text-align:left;color:white}
+.team-members>.container .member .social-icons {text-align:left;color:white}
+.team-members>.container .member .social-icons>i:hover{color:#ff0000;
+    transition:all 0.4s ease-in-out}
+
+/*End team members*/
+
+/*Start I'm-Static*/
+
+.Im-Static {background: linear-gradient(to bottom, #ff0000 10%, #FFCC00 100%);height:450px;transform: skewY(-4deg);}
+.Im-Static .desc-icons {color: red;width: 100%;overflow: hidden;text-align: center;
+    transform: skewY(4deg) translateY(-37px);display: inline-block;margin: auto;}
+.Im-Static .desc-icons>i {background: white;padding: 13px;border-radius: 50%;border: 3.5px solid red;width: 80px;height: 80px;}
+.Im-Static .desc-icons>h3{color:white}
+.Im-Static>hr {color:white;margin:0px;height:4px;background-color:white;border:0px}
+.Im-Static>.container {padding-top:0px;text-align: center}
+.Im-Static .service {width:17%;height:250px;display:inline-block;margin:0%;padding:1%;text-align:center;color:white;background:none;}
+.Im-Static>.container>.service:hover{background:#001F32;color:red}
+.Im-Static .service h2{transform:skewY(4deg);}
+.Im-Static .service p{transform:skewY(4deg);margin-bottom: 0px;font-size:18px;padding:0px}
+.Im-Static .service>i {transform:skewY(4deg);padding:5px 20px;}
+
+/*End I'm-Static*/
+
+/*Start testimonials*/
+
+.testimonials {transform: skewY(-4deg);background-image: url(../IMGS/p13.png);}
+.testimonials>hr {color:red;margin-top:-1px;height:4px;background-color:red;border:0px}
+.testimonials .desc-icons {color: red;width: 100%;overflow: hidden;text-align: center;
+    transform:skewY(4deg) translateY(-45px);display: inline-block;margin: auto;}
+.testimonials .desc-icons>i {background: white;padding: 11px;border-radius: 50%;
+    border: 3.5px solid red;width: 80px;height: 80px;}
+.testimonials .desc-icons>h3{color:white}
+.testimonials>.container {transform:skewY(4deg);height:auto}
+.testimonials>.container .image {float:left;display:block;width:30%;}
+.testimonials>.container .image>img {border:5px solid #FFF;border-radius:50%;margin-left:110px}
+.testimonials>.container .comment {color: #ffffff;float:left;display:block;width:70%;}
+.testimonials>.container .comment>p {padding-top:90px;padding-right:40px;font-size:18px;}
+.testimonials>.container .comment>h3 {font-family: 'Merienda One', cursive;padding-left:10px;}
+.testimonials>.container>ul {text-align:center;padding-top:0px;display:inline-block;width:100%;margin-bottom:65px;padding:0px}
+.testimonials>.container>ul li {display: inline-block;border:0.7px solid #FFF;border-radius:50%;padding:7px;}
+.testimonials>.container>ul>li.active {background-color: white}
+.testimonials>.container>ul>li:hover{background-color:#FFF;
+    transition:all 0.4s ease-in-out}
+
+/*End testimonials*/
+
+/*Start get in touch*/
+
+.get-in-touch {height:auto;transform: skewY(-4deg);padding-bottom:40px;margin-bottom:0px;background-image:url(../IMGS/5.jpg);background-size:cover;}
+.get-in-touch>hr {color:#09080D;margin-top:-1px;height:4px;background-color:#09080D;border:0px}
+.get-in-touch .desc-icons {color: red; width: 100%;overflow: hidden;text-align: center;
+    transform: skewY(4deg) translateY(-38px);display: inline-block;margin: auto;}
+.get-in-touch .desc-icons>i {background: white;padding:4px;border-radius: 50%;border: 3.5px solid red;width: 80px;height: 80px;}
+.get-in-touch .desc-icons>h3{color:white}
+.get-in-touch>.container {transform:skewY(4deg);text-align:center;}
+.get-in-touch .form .input {
+    color:red;
+    width:30%;margin-right:1.5%;
+    margin-left:1.5%;
+    padding:5px;border:1.5px solid red;
+    border-radius:3px;
+}
+.get-in-touch .form .msg {
+    color:red;
+    display:block;
+    width:90%;margin:5%;
+    border:1.5px solid red;
+    border-radius:5px;
+    padding:15px;
+}
+.get-in-touch .form button {color:#ff0000;margin-top:70px;background:none;border:3px solid red;padding:20px;border-radius:3px;font-size:30px;cursor:pointer;transition: all 0.4s ease-in-out;}
+.get-in-touch .form > button:hover{color:#FFF;background-color:red;transition:all 0.6s ease-in-out;}
+
+/*End get in touch*/
+
+/*Start footer*/
+
+footer {transform: skewY(-4deg);background-color:#001F32fc;height:90px}
+footer>hr {color:red;margin:0px;height:4px;background-color:red;border:0px;padding-top:1px;}
+footer .unskew {transform:skewY(4deg);}
+footer p {float: left;color:white;margin-top:32px;margin-bottom:30px;font-size:19px;padding-left:120px}
+footer ul {float:right;margin-top:32px;margin-bottom:30px;padding-right:120px}
+footer ul li {list-style:none;display:inline-block;padding-left:25px;}
+footer ul li a {text-decoration:none;color:white;}
+footer ul li a:hover {color:red;transition:all 0.6s ease-in-out;}
+
+/*End footer*/
